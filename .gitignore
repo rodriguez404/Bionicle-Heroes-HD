@@ -1,0 +1,45 @@
+# Build output
+build/
+dist/
+out/
+bin/
+obj/
+*.asi
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.exp
+.vs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Texture packs, archives and logs (made by tools/build_pack.py / package.cmd, or the game)
+*.dds
+*.png
+*.7z
+*.zip
+*.rar
+*.log
+BionicleHeroesHD/
+
+# Never commit game files, decompiled code or dumps (they live in ..\BionicleHeroes-decomp)
+*.dat
+*.gpr
+*.rep/
+*.gzf
+decomp/
+dumps/
+
+# AI-agent tooling: instructions, notes, settings, MCP configs — kept local, not published
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.mcp.json
+MODDING_PLAN.md
+MODLOG.md
