@@ -65,6 +65,12 @@ Visual Studio Build Tools with the C++ workload and CMake (x86 / Win32): `build.
 archive in `dist\` (needs the x86 `dinput8.dll` of Ultimate ASI Loader in
 `third_party\ultimate-asi-loader\`, not kept in git).
 
+`release.cmd <tag>` (e.g. `release.cmd v1.0`) packs both archives from `build\pack\textures-x2` and
+`-x4` and creates a draft GitHub release on the pushed HEAD with them, using
+[GitHub CLI](https://cli.github.com/) (`gh auth login` once). `--publish` publishes it right away,
+`--dry-run` stops before creating it. 7-Zip and gh come from PATH, or from `SEVENZIP` / `GH` set in a
+`local.cmd` next to it (not in git).
+
 ## Credits
 
 - [MinHook](https://github.com/TsudaKageyu/minhook) by Tsuda Kageyu (BSD 2-Clause), vendored in
